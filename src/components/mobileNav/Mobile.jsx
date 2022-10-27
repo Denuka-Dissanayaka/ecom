@@ -7,11 +7,13 @@ import {ContainerMobile} from './Style';
 import {FaAngleDown} from 'react-icons/fa';
 import {AiOutlineCloseCircle} from 'react-icons/ai';
 
+// ----------------- Import use context-----------
 import { UserContext } from '../../App';
 
 const Mobile = () => {
     const {marginValue, setMarginFunc} = useContext(UserContext);
 
+    // --------- handle close button function ---------------
     const handleCloseBtn = () => {
         setMarginFunc('-800px')
     }
