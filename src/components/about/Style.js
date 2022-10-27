@@ -22,4 +22,20 @@ export const Container = styled.div`
         justify-content: center;
         margin-top: 4rem;
     }
+
+    @media (max-width: 821px) {
+        p {
+            width: 80%;
+        }
+    }
+
+    @media (max-width: 500px) {
+        p {
+            width: 90%;
+        }
+
+        h1 {
+            font-size: 5rem;
+        }
+    }
 `;

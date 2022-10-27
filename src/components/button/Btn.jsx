@@ -7,13 +7,13 @@ const BtnContainer = styled.button`
     color: white;
     padding: 1.7rem 3.5rem;
     font-size: 1.5rem;
-    border: none;
+    border: 1px solid transparent;
     cursor: pointer;
     transition: 0.2s;
 
     &:hover {
       color: black;
-      border: 2px solid black;
+      border-color: black;
       background: transparent;
     }
 

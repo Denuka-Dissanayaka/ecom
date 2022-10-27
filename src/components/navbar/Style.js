@@ -1,7 +1,20 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: #fff;
+    padding: 1rem 0;
+    transition: 0.5s;
+
+    &.active {
+        background-color: #f5f3f2;
+        padding: 0;
+        
+    }
+
     .nav-container {
         color : #303030;
         width : 90%;
@@ -32,6 +45,17 @@ export const Container = styled.div`
                 margin-right: 2.5rem;
                 cursor: pointer;
             }
+
+            li:hover {
+                color: #000;
+                font-weight: 500;
+            }
+        }
+
+        .menu-one span {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
         }
 
         .menu-two {
